@@ -1,9 +1,11 @@
 {
   "Applications": [
-    "/usr/share/applications/org.coolercontrol.CoolerControl.desktop",
-    "/home/feel/.local/share/applications/spotify.desktop",
+    "/usr/share/applications/discord.desktop",
     "/usr/share/applications/spotify.desktop",
-    "/usr/share/applications/discord.desktop"
+    "/usr/share/applications/nvidia-settings.desktop",
+    "/usr/share/applications/zen.desktop",
+    "/usr/share/applications/org.coolercontrol.CoolerControl.desktop",
+    "/home/feel/.local/share/applications/spotify.desktop"
   ],
   "Wallpaper": [
     "/home/feel/.config/wallpapers/wallhaven-21oqrg.jpg",

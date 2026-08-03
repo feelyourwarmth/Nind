@@ -2,6 +2,10 @@ spawn-at-startup "noctalia"
 
 prefer-no-csd
 
+workspace "1"
+workspace "2"
+workspace "3"
+
 input {
     focus-follows-mouse
     keyboard {
@@ -146,7 +150,7 @@ window-rule {
 window-rule {
   match title="Spotify"
   open-maximized true
-  open-on-workspace "2"
+  open-on-workspace "3"
   default-column-width { fixed 1080; }
   default-window-height { fixed 920; }
 }
@@ -154,17 +158,19 @@ window-rule {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    // Suggested binds for running programs: terminal, app launcher, screen locker.
+    Alt+Backslash { screenshot; }
+    Ctrl+Backslash { screenshot-screen; }
+
     Mod+Z hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+N hotkey-overlay-title="Open GoPac" { spawn-sh "kitty gopac"; }
     Mod+E hotkey-overlay-title="Open Nautilus" { spawn "nautilus"; }
     Mod+B hotkey-overlay-title="Open Zen" { spawn "zen-browser"; }
     Mod+Space hotkey-overlay-title="Toggle Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+S hotkey-overlay-title="Toggle Panel" { spawn-sh "noctalia msg panel-toggle control-center"; }
-
+    Mod+Alt+L hotkey-overlay-title="Toggle Panel" { spawn-sh "noctalia msg panel-toggle session"; }
     Mod+Q hotkey-overlay-title="Change Wallpaper" { spawn-sh "noctalia msg panel-toggle wallpaper"; }
 
-    Mod+O repeat=false { toggle-overview; }
+    Mod+X repeat=false { toggle-overview; }
 
     Mod+W repeat=false { close-window; }
 
@@ -324,7 +330,7 @@ binds {
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
-    Mod+V       { toggle-window-floating; }
+    Mod+D       { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
@@ -339,10 +345,6 @@ binds {
     // since it will switch twice upon pressing the hotkey (once by xkb, once by niri).
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
-
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here

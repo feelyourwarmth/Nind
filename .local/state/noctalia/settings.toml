@@ -5,15 +5,14 @@ blur_intensity = 0.54999998770654202
 
 [bar.default]
 background_opacity = 0.57999998703598976
-center = [ "clock", "weather" ]
+center = [ "clock", "spacer_3", "weather" ]
 contact_shadow = true
 end = [ "media", "tray", "notifications", "volume", "session" ]
 margin_edge = 5
 margin_ends = 10
 margin_opposite_edge = 1
 padding = 23
-radius = 4
-start = [ "workspaces", "audio_visualizer" ]
+start = [ "workspaces", "spacer_2", "audio_visualizer" ]
 thickness = 30
 
 [control_center]
@@ -83,16 +82,21 @@ wallpaper_scheme = "soft"
 directory = "~/.config/wallpapers"
 
     [wallpaper.default]
-    path = "/home/feel/.config/wallpapers/wallhaven-9oo12x.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-zpd5dj.jpg"
 
     [wallpaper.last]
-    path = "/home/feel/.config/wallpapers/wallhaven-9oo12x.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-zpd5dj.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/feel/.config/wallpapers/wallhaven-9oo12x.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-zpd5dj.jpg"
+
+[widget.audio_visualizer]
+bands = 48
+capsule = true
+mirrored = false
+width = 120
 
 [widget.clock]
-anchor = true
 format = "{:%B %d, %A %H:%M}"
 
 [widget.launcher]
@@ -103,6 +107,13 @@ glyph = "add"
 album_art_only = true
 hide_when_no_media = true
 scale = 1.3500000000000001
+
+[widget.spacer_2]
+length = 30
+type = "spacer"
+
+[widget.spacer_3]
+type = "spacer"
 
 [widget.tray]
 drawer = true
