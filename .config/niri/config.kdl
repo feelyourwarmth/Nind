@@ -19,7 +19,7 @@ input {
 
 output "DP-1" {
     mode "1920x1080@179.999"
-    scale 1
+    scale 1.00
     transform "normal"
     position x=1280 y=0
 }
@@ -143,6 +143,7 @@ window-rule {
   match title="Discord"
   open-maximized true
   open-on-workspace "2"
+  opacity 1.00
   default-column-width { fixed 1080; }
   default-window-height { fixed 920; }
 }
@@ -157,6 +158,8 @@ window-rule {
 
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
+
+    Alt+C hotkey-overlay-title="Clip OBS" { spawn-sh "gobs-cli replaybuffer save"; }
 
     Alt+Backslash { screenshot; }
     Ctrl+Backslash { screenshot-screen; }

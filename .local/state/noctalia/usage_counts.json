@@ -1,10 +1,15 @@
 {
   "Applications": {
     "/home/feel/.local/share/applications/spotify.desktop": 1,
-    "/usr/share/applications/discord.desktop": 12,
+    "/home/feel/.local/share/applications/steam.desktop": 2,
+    "/usr/share/applications/com.github.wwmm.easyeffects.desktop": 3,
+    "/usr/share/applications/com.obsproject.Studio.desktop": 1,
+    "/usr/share/applications/dev.zed.Zed.desktop": 6,
+    "/usr/share/applications/discord.desktop": 15,
     "/usr/share/applications/nvidia-settings.desktop": 2,
     "/usr/share/applications/org.coolercontrol.CoolerControl.desktop": 7,
-    "/usr/share/applications/spotify.desktop": 5,
+    "/usr/share/applications/spotify.desktop": 7,
+    "/usr/share/applications/steam.desktop": 6,
     "/usr/share/applications/zen.desktop": 1
   },
   "Wallpaper": {

@@ -1,7 +1,12 @@
 {
   "Applications": [
-    "/usr/share/applications/discord.desktop",
+    "/home/feel/.local/share/applications/steam.desktop",
     "/usr/share/applications/spotify.desktop",
+    "/usr/share/applications/steam.desktop",
+    "/usr/share/applications/com.github.wwmm.easyeffects.desktop",
+    "/usr/share/applications/dev.zed.Zed.desktop",
+    "/usr/share/applications/discord.desktop",
+    "/usr/share/applications/com.obsproject.Studio.desktop",
     "/usr/share/applications/nvidia-settings.desktop",
     "/usr/share/applications/zen.desktop",
     "/usr/share/applications/org.coolercontrol.CoolerControl.desktop",

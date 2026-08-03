@@ -73,31 +73,33 @@ builtin = "Catppuccin"
 community_palette = "Oxocarbon"
 mode = "dark"
 source = "wallpaper"
-wallpaper_scheme = "soft"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
+    community_ids = [ "zed" ]
 
 [wallpaper]
 directory = "~/.config/wallpapers"
 
     [wallpaper.default]
-    path = "/home/feel/.config/wallpapers/wallhaven-zpd5dj.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-21oqrg.jpg"
 
     [wallpaper.last]
-    path = "/home/feel/.config/wallpapers/wallhaven-zpd5dj.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-21oqrg.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/feel/.config/wallpapers/wallhaven-zpd5dj.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-21oqrg.jpg"
 
 [widget.audio_visualizer]
-bands = 48
+bands = 80
 capsule = true
+interactive = false
 mirrored = false
 width = 120
 
 [widget.clock]
 format = "{:%B %d, %A %H:%M}"
+scale = 0.90000000000000013
 
 [widget.launcher]
 capsule = true
