@@ -41,7 +41,7 @@ echo """
 """
 
 
-echo "[1/11] Verificando repositório multilib..."
+echo "[1/12] Verificando repositório multilib..."
 
 if ! grep -qE "^\[multilib\]" /etc/pacman.conf; then
     echo "Multilib desabilitado. Habilitando..."
@@ -62,13 +62,13 @@ else
 fi
 
 echo ""
-echo "[2/11] Atualizando sistema..."
+echo "[2/12] Atualizando sistema..."
 
 sudo pacman -Syu --noconfirm
 
 
 echo ""
-echo "[3/11] Verificando yay..."
+echo "[3/12] Verificando yay..."
 
 if ! command -v yay &>/dev/null; then
     echo "Instalando yay..."
@@ -90,7 +90,7 @@ fi
 
 
 echo ""
-echo "[4/11] Instalando dependências base..."
+echo "[4/12] Instalando dependências base..."
 
 sudo pacman -S --needed --noconfirm \
     base-devel \
@@ -135,7 +135,7 @@ yay --sudoloop -S --needed --noconfirm zen-browser-bin noctalia-git gopac-bin ni
 
 
 echo ""
-echo "[5/11] Configuração da GPU"
+echo "[5/12] Configuração da GPU"
 
 echo ""
 echo "GPU detectada:"
@@ -300,7 +300,7 @@ esac
 
 
 echo ""
-echo "[6/11] Criando backup..."
+echo "[6/12] Criando backup..."
 
 BACKUP_DIR=~/dots-backup-$(date +%Y%m%d-%H%M%S)
 mkdir -p "$BACKUP_DIR/.config" "$BACKUP_DIR/.local"
@@ -317,7 +317,7 @@ echo "Backup salvo em: $BACKUP_DIR"
 
 
 echo ""
-echo "[7/11] Aplicando configurações..."
+echo "[7/12] Aplicando configurações..."
 
 require_path "$DOTS_DIR/.config"
 require_path "$DOTS_DIR/.local"
@@ -337,7 +337,7 @@ cp -a \
 
 
 echo ""
-echo "[8/11] Instalando SDDM..."
+echo "[8/12] Instalando SDDM..."
 
 sudo systemctl disable gdm 2>/dev/null || true
 sudo systemctl disable lightdm 2>/dev/null || true
@@ -364,7 +364,7 @@ EOF
 
 
 echo ""
-echo "[9/11] Ativando serviços..."
+echo "[9/12] Ativando serviços..."
 
 sudo systemctl enable sddm
 sudo systemctl enable NetworkManager
@@ -383,7 +383,7 @@ systemctl --user enable --now \
 echo ""
 echo ""
 echo ""
-echo "[10/11] Extras (opcional)"
+echo "[10/12] Extras (opcional)"
 
 echo ""
 echo "Escolha pacotes que deseja instalar:"
@@ -406,6 +406,8 @@ APPS=(
     "CoolerControl"
     "Flatpak"
     "Yazi"
+    "OpenRGB"
+    "OBS-Studio"
 )
 
 for i in "${!APPS[@]}"; do
@@ -528,6 +530,24 @@ else
                 yazi
             )
             ;;
+        14)
+            INSTALL_PACMAN+=(
+                openrgb
+                i2c-tools
+            )
+            sudo modprobe i2c-dev
+            sudo modprobe i2c-i801
+            sudo modprobe i2c-piix4
+            sudo i2cdetect -l
+            ;;
+        15)
+            INSTALL_PACMAN+=(
+                obs-studio
+            )
+            INSTALL_YAY+=(
+                gobs-cli-bin
+            )
+            ;;
         *)
             echo "Opção inválida: $APP"
             ;;
@@ -597,7 +617,20 @@ echo "Apps extras finalizado!"
 
 
 echo ""
-echo "[11/11] Finalizando..."
+echo "[11/12] Instalando Vicinae..."
+
+if ! command -v vicinae &>/dev/null; then
+    curl -fsSL https://vicinae.com/install -o /tmp/vicinae-install.sh
+    sed -i 's#< /dev/tty##' /tmp/vicinae-install.sh
+    yes | bash /tmp/vicinae-install.sh
+    rm -f /tmp/vicinae-install.sh
+else
+    echo "Vicinae já instalado."
+fi
+
+
+echo ""
+echo "[12/12] Finalizando..."
 
 fc-cache -f
 

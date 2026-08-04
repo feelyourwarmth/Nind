@@ -1,15 +1,18 @@
 {
   "Applications": [
-    "/usr/share/applications/zen.desktop",
+    "/usr/local/share/applications/vicinae.desktop",
+    "/usr/share/applications/org.openrgb.OpenRGB.desktop",
     "/usr/share/applications/dev.zed.Zed.desktop",
-    "/home/feel/.local/share/applications/steam.desktop",
+    "/usr/share/applications/nvidia-settings.desktop",
     "/usr/share/applications/spotify.desktop",
+    "/usr/share/applications/discord.desktop",
+    "/usr/share/applications/io.github.nirimod.desktop",
+    "/usr/share/applications/org.coolercontrol.CoolerControl.desktop",
+    "/usr/share/applications/zen.desktop",
+    "/home/feel/.local/share/applications/steam.desktop",
     "/usr/share/applications/steam.desktop",
     "/usr/share/applications/com.github.wwmm.easyeffects.desktop",
-    "/usr/share/applications/discord.desktop",
     "/usr/share/applications/com.obsproject.Studio.desktop",
-    "/usr/share/applications/nvidia-settings.desktop",
-    "/usr/share/applications/org.coolercontrol.CoolerControl.desktop",
     "/home/feel/.local/share/applications/spotify.desktop"
   ],
   "Wallpaper": [
