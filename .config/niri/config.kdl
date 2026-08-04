@@ -135,18 +135,16 @@ window-rule {
 window-rule {
   match title="Discord"
   open-maximized true
+  open-focused true
   open-on-workspace "2"
   opacity 1.00
-  default-column-width { fixed 1080; }
-  default-window-height { fixed 920; }
 }
 
 window-rule {
   match title="Spotify"
   open-maximized true
+  open-focused true
   open-on-workspace "3"
-  default-column-width { fixed 1080; }
-  default-window-height { fixed 920; }
 }
 
 binds {
