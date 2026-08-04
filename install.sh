@@ -104,6 +104,8 @@ sudo pacman -S --needed --noconfirm \
     kitty \
     fish \
     yazi \
+    ffmpegthumbnailer \
+    tumbler \
     eza \
     zoxide \
     neovim \
@@ -393,25 +395,25 @@ echo "[10/12] Extras (opcional)"
 
 echo ""
 echo "Escolha pacotes que deseja instalar:"
-echo "Digite os números separados por espaço e dê ENTER. (ex: 1 3 2 4)"
+echo "Digite os números separados por espaço e dê ENTER. (ex: 1 3 5 6 7 10 12 13)"
 echo ""
 echo "Caso queira pular está etapa, apenas dê ENTER sem digitar nada."
 echo ""
 
 APPS=(
-    "Easyeffects"
-    "VSCode"
-    "Zed"
-    "GIMP"
-    "LACT"
-    "Steam"
-    "Discord"
-    "LibreOffice"
-    "Thunderbird"
-    "CoolerControl"
-    "Flatpak"
-    "OpenRGB"
-    "OBS-Studio"
+    "Easyeffects" # 1
+    "VSCode" # 2
+    "Zed" # 3
+    "GIMP" # 4
+    "LACT" # 5
+    "Steam" # 6
+    "Discord" # 7
+    "LibreOffice" # 8
+    "Thunderbird" # 9
+    "CoolerControl" # 10
+    "Flatpak" # 11
+    "OpenRGB" # 12
+    "OBS-Studio" # 13
 )
 
 for i in "${!APPS[@]}"; do
