@@ -2,7 +2,7 @@
 
 <small><sub>_Image for illustration purposes only. The look of the setup may change with future updates._</sub></small>
 <p align="center">
-  <img src="demo.png" alt="Preview">
+  <img src="showcase.png" alt="Preview">
 </p>
 
 <p align="center">

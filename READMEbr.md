@@ -2,7 +2,7 @@
 
 <small><sub>_Imagem meramente ilustrativa. A aparência da configuração pode mudar com futuras atualizações._</sub></small>
 <p align="center">
-  <img src="demo.png" alt="Preview">
+  <img src="showcase.png" alt="Preview">
 </p>
 
 <p align="center">
