@@ -131,7 +131,7 @@ sudo pacman -S --needed --noconfirm \
     cava \
     qt6-multimedia-ffmpeg
 
-yay --sudoloop -S --needed --noconfirm zen-browser-bin noctalia-git gopac-bin
+yay --sudoloop -S --needed --noconfirm zen-browser-bin noctalia-git gopac-bin nirimod-git
 
 
 echo ""
