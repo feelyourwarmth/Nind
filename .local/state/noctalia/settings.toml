@@ -3,21 +3,27 @@ config_version = 12
 [backdrop]
 blur_intensity = 0.54999998770654202
 
-[bar.default]
-background_opacity = 0.57999998703598976
-center = [ "clock", "spacer_3", "weather" ]
-contact_shadow = true
-end = [ "media", "tray", "notifications", "volume", "session" ]
-layer = "overlay"
-margin_edge = 5
-margin_ends = 10
-margin_opposite_edge = 1
-padding = 23
-start = [ "workspaces", "spacer_2", "audio_visualizer" ]
-thickness = 24
+[bar]
+order = [ "default" ]
+
+    [bar.default]
+    background_opacity = 0.57999998703598976
+    center = [ "clock", "spacer_3", "weather" ]
+    contact_shadow = true
+    end = [ "media", "tray", "notifications", "volume", "session" ]
+    layer = "overlay"
+    margin_edge = 5
+    margin_ends = 10
+    margin_opposite_edge = 1
+    padding = 23
+    start = [ "workspaces" ]
+    thickness = 24
 
 [control_center]
 hidden_tabs = [ "power", "bluetooth" ]
+
+    [control_center.calendar]
+    show_events_card = false
 
 [desktop_widgets]
 schema_version = 2
@@ -29,27 +35,29 @@ widget_order = [
 ]
 
     [desktop_widgets.grid]
-    cell_size = 16
+    cell_size = 8
     major_interval = 4
     visible = true
 
     [desktop_widgets.widget.desktop-widget-0000000000000001]
     box_height = 0.0
     box_width = 0.0
-    cx = 1731.0
-    cy = 988.0
+    cx = 1808.0
+    cy = 927.5
     output = "DP-1"
     rotation = 0.0
     type = "media_player"
 
         [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background_padding = 24
         hide_when_no_media = true
+        layout = "vertical"
 
     [desktop_widgets.widget.desktop-widget-0000000000000002]
-    box_height = 128.0
+    box_height = 120.0
     box_width = 112.0
-    cx = 1640.0
-    cy = 988.0
+    cx = 1808.0
+    cy = 881.0
     output = "DP-1"
     rotation = 0.0
     type = "fancy_audio_visualizer"
@@ -135,6 +143,12 @@ history_retention_hours = 1
 layer = "overlay"
 scale = 0.85000000521540642
 
+[plugin_settings."kenn/keybind-cheatsheet"]
+compositor = "niri"
+
+[plugins]
+enabled = [ "nightwatch75/todo" ]
+
 [shell]
 polkit_agent = true
 show_location = false
@@ -143,9 +157,6 @@ show_location = false
     floating_layer = "top"
     open_near_click_control_center = true
     transparency_mode = "glass"
-
-    [shell.screen_corners]
-    size = 100
 
     [shell.shadow]
     direction = "center"
@@ -191,10 +202,6 @@ glyph = "add"
 album_art_only = true
 hide_when_no_media = true
 scale = 1.3500000000000001
-
-[widget.spacer_2]
-length = 30
-type = "spacer"
 
 [widget.spacer_3]
 type = "spacer"
