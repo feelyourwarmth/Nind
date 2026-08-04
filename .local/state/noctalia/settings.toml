@@ -129,6 +129,12 @@ widget_order = [ "lockscreen-login-box@DP-1" ]
         show_unlock_hint = true
         show_weather = true
 
+[notification]
+background_opacity = 0.86999998055398464
+history_retention_hours = 1
+layer = "overlay"
+scale = 0.85000000521540642
+
 [shell]
 polkit_agent = true
 show_location = false
