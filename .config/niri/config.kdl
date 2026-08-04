@@ -1,5 +1,5 @@
 spawn-at-startup "noctalia"
-spawn-at-startup "vicinae server"
+spawn-sh-at-startup "vicinae server"
 
 prefer-no-csd
 
