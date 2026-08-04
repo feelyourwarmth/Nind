@@ -85,13 +85,13 @@ wallpaper_scheme = "soft"
 directory = "~/.config/wallpapers"
 
     [wallpaper.default]
-    path = "/home/feel/.config/wallpapers/wallhaven-d83g9m.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-mlg59k.jpg"
 
     [wallpaper.last]
-    path = "/home/feel/.config/wallpapers/wallhaven-d83g9m.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-mlg59k.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/feel/.config/wallpapers/wallhaven-d83g9m.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-mlg59k.jpg"
 
 [widget.audio_visualizer]
 bands = 80

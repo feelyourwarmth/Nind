@@ -152,6 +152,7 @@ binds {
     Mod+Z hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+N hotkey-overlay-title="Open GoPac" { spawn-sh "kitty gopac"; }
     Mod+E hotkey-overlay-title="Open Nautilus" { spawn "nautilus"; }
+    Mod+Shift+E hotkey-overlay-title="Open Nautilus" { spawn-sh "kitty yazi"; }
     Mod+B hotkey-overlay-title="Open Zen" { spawn "zen-browser"; }
     // Mod+Space hotkey-overlay-title="Toggle Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+Space hotkey-overlay-title="Toggle Launcher" { spawn-sh "vicinae toggle"; }
@@ -346,7 +347,7 @@ binds {
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     // The quit action will show a confirmation dialog to avoid accidental exits.
-    Mod+Shift+E { quit; }
+    Mod+Shift+M { quit; }
     Ctrl+Alt+Delete { quit; }
 
     // Powers off the monitors. To turn them back on, do any input like
