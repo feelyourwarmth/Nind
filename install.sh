@@ -103,6 +103,12 @@ sudo pacman -S --needed --noconfirm \
     imv \
     kitty \
     fish \
+    yazi \
+    eza \
+    zoxide \
+    neovim \
+    lua \
+    luarocks \
     vlc \
     ffmpeg \
     unzip \
@@ -394,7 +400,6 @@ echo ""
 
 APPS=(
     "Easyeffects"
-    "Neovim (w/ Lazy)"
     "VSCode"
     "Zed"
     "GIMP"
@@ -405,7 +410,6 @@ APPS=(
     "Thunderbird"
     "CoolerControl"
     "Flatpak"
-    "Yazi"
     "OpenRGB"
     "OBS-Studio"
 )
@@ -444,33 +448,26 @@ else
             )
             ;;
         2)
-            INSTALL_PACMAN+=(
-                neovim
-                lua
-                luarocks
-            )
-            ;;
-        3)
             INSTALL_YAY+=(
                 visual-studio-code-bin
             )
             ;;
-        4)
+        3)
             INSTALL_PACMAN+=(
                 zed
             )
             ;;
-        5)
+        4)
             INSTALL_PACMAN+=(
                 gimp
             )
             ;;
-        6)
+        5)
             INSTALL_PACMAN+=(
                 lact
             )
             ;;
-        7)
+        6)
             INSTALL_PACMAN+=(
                 steam
             )
@@ -488,22 +485,22 @@ else
                 INSTALL_SLSSTEAM=true
             fi
             ;;
-        8)
+        7)
             INSTALL_PACMAN+=(
                 discord
             )
             ;;
-        9)
+        8)
             INSTALL_PACMAN+=(
                 libreoffice-fresh
             )
             ;;
-        10)
+        9)
             INSTALL_PACMAN+=(
                 thunderbird
             )
             ;;
-        11)
+        10)
             INSTALL_YAY+=(
                 coolercontrold-bin
                 coolercontrol-bin
@@ -520,17 +517,12 @@ else
                 INSTALL_NCT6687=true
             fi
             ;;
-        12)
+        11)
             INSTALL_PACMAN+=(
                 flatpak
             )
             ;;
-        13)
-            INSTALL_PACMAN+=(
-                yazi
-            )
-            ;;
-        14)
+        12)
             INSTALL_PACMAN+=(
                 openrgb
                 i2c-tools
@@ -540,7 +532,7 @@ else
             sudo modprobe i2c-piix4
             sudo i2cdetect -l
             ;;
-        15)
+        13)
             INSTALL_PACMAN+=(
                 obs-studio
             )

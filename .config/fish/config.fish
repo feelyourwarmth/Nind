@@ -24,6 +24,9 @@ set -gx PATH $HOME/.local/bin $PATH
 alias reload-fish="source ~/.config/fish/config.fish"
 alias edit-fish="nvim ~/.config/fish/config.fish"
 
+alias vencord='sh -c "$(curl -sS https://vencord.dev/install.sh)"'
+alias mtx='unimatrix -n -a -l k'
+
 alias clear="clear -x"
 alias cl="clear -x"
 
@@ -40,26 +43,6 @@ alias python="python3"
 if command -q zoxide
     zoxide init fish | source
     alias cd="z"
-end
-
-
-# ==========================
-# FZF
-# ==========================
-
-if command -q fzf
-    set -gx FZF_DEFAULT_OPTS "
-    --color=fg:#CBE0F0,
-    bg:#011628,
-    hl:#B388FF,
-    fg+:#CBE0F0,
-    bg+:#143652,
-    hl+:#B388FF,
-    info:#06BCE4,
-    prompt:#2CF9ED,
-    pointer:#2CF9ED,
-    marker:#2CF9ED
-    "
 end
 
 
