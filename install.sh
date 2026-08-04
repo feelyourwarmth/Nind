@@ -405,6 +405,7 @@ APPS=(
     "Thunderbird"
     "CoolerControl"
     "Flatpak"
+    "Yazi"
 )
 
 for i in "${!APPS[@]}"; do
@@ -520,6 +521,11 @@ else
         12)
             INSTALL_PACMAN+=(
                 flatpak
+            )
+            ;;
+        13)
+            INSTALL_PACMAN+=(
+                yazi
             )
             ;;
         *)

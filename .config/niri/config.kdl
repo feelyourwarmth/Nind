@@ -124,13 +124,6 @@ window-rule {
     popups {
         opacity 1.00
         geometry-corner-radius 15
-
-        background-effect {
-            xray true
-            blur true
-            noise 0.05
-            saturation 2
-        }
     }
 }
 

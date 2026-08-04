@@ -80,7 +80,7 @@ wallpaper_scheme = "soft"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
-    community_ids = [ "zed" ]
+    community_ids = [ "zed", "yazi" ]
 
 [wallpaper]
 directory = "~/.config/wallpapers"
