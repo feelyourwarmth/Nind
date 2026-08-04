@@ -18,7 +18,7 @@ O **Nind** é minha configuração pessoal para **Arch Linux** utilizando **Wayl
 Além dos dotfiles, o projeto inclui um instalador (`install.sh`) capaz de transformar uma instalação mínima do Arch em um desktop completamente funcional, instalando pacotes, drivers, serviços e copiando todas as configurações automaticamente.
 
 <small><sub><b>Observação:</b><br>
-<i>O script de instalação foi desenvolvido e testado por mim em instalações limpas do Arch Linux.</i><br>
+<i>O script de instalação foi desenvolvido e testado por mim em instalações limpas do Arch Linux (DE Minimal).</i><br>
 <i>Além disso, ele foi revisado para minimizar possíveis problemas durante a instalação dos dotfiles.</i><br>
 <i>Ainda assim, caso prefira, você pode ignorar o script e instalar ou copiar os dotfiles manualmente no seu sistema.</i></sub></small>
 
