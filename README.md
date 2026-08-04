@@ -26,6 +26,7 @@ Besides the dotfiles, the project includes an installer (`install.sh`) capable o
 
 - niri configured with Noctalia integration
 - Noctalia v5 (shell, theming, and included wallpapers)
+- Vicinae (App Launcher)
 - Kitty
 - Fish
 - Neovim (LazyVim)
@@ -54,7 +55,8 @@ Besides the dotfiles, the project includes an installer (`install.sh`) capable o
 8. Installs and configures SDDM with a theme.
 9. Enables the required services (SDDM, NetworkManager, PipeWire).
 10. Optional step: lets you pick extra packages to install.
-11. Wraps up: font cache, default shell (Fish), icon theme, and reboots the system.
+11. Installs Vicinae.
+12. Wraps up: font cache, default shell (Fish), icon theme, and reboots the system.
 
 ---
 
@@ -74,6 +76,7 @@ After installing **Arch Linux**, run:
 ```bash
 git clone https://github.com/feelyourwarmth/Nind.git
 cd Nind
+
 chmod +x install.sh
 ./install.sh
 ```
@@ -107,7 +110,6 @@ niri's keybindings and settings are defined in:
 
 ```text
 ~/.config/niri/config.kdl
-~/.config/niri/noctalia.kdl
 ```
 
 ---
