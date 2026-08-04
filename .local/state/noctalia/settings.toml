@@ -8,15 +8,88 @@ background_opacity = 0.57999998703598976
 center = [ "clock", "spacer_3", "weather" ]
 contact_shadow = true
 end = [ "media", "tray", "notifications", "volume", "session" ]
+layer = "overlay"
 margin_edge = 5
 margin_ends = 10
 margin_opposite_edge = 1
 padding = 23
 start = [ "workspaces", "spacer_2", "audio_visualizer" ]
-thickness = 30
+thickness = 24
 
 [control_center]
 hidden_tabs = [ "power", "bluetooth" ]
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [
+    "desktop-widget-0000000000000001",
+    "desktop-widget-0000000000000002",
+    "desktop-widget-0000000000000004",
+    "desktop-widget-0000000000000005"
+]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1731.0
+    cy = 988.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        hide_when_no_media = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 128.0
+    box_width = 112.0
+    cx = 1640.0
+    cy = 988.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "fancy_audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = false
+        fade_when_idle = true
+        visualization_mode = "wave"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000004]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 64.0
+    cy = 897.5
+    output = "DP-1"
+    rotation = 0.0
+    type = "sysmon"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000004.settings]
+        background = true
+        display = "gauge"
+        gauge_layout = "horizontal"
+        shadow = true
+        stat = "cpu_temp"
+        stat2 = "cpu_usage"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000005]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 124.0
+    cy = 993.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "weather"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000005.settings]
+        background = true
+        font_family = "JetBrains Mono NL"
+        forecast_days = 2
+        show_forecast = true
 
 [location]
 auto_locate = true
