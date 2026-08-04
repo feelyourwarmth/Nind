@@ -122,6 +122,7 @@ sudo pacman -S --needed --noconfirm \
     starship \
     fastfetch \
     sddm \
+    sl \
     pipewire \
     pipewire-pulse \
     wireplumber \
