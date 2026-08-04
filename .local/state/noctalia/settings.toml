@@ -68,11 +68,15 @@ show_location = false
     [shell.screen_corners]
     size = 100
 
+    [shell.shadow]
+    direction = "center"
+
 [theme]
 builtin = "Catppuccin"
-community_palette = "Oxocarbon"
-mode = "dark"
+community_palette = "ADW"
+mode = "auto"
 source = "wallpaper"
+wallpaper_scheme = "soft"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]

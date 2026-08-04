@@ -394,7 +394,7 @@ echo ""
 
 APPS=(
     "Easyeffects"
-    "Neovim"
+    "Neovim (w/ Lazy)"
     "VSCode"
     "Zed"
     "GIMP"
