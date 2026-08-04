@@ -37,7 +37,11 @@ alias python="python3"
 
 # git add .
 function gt
-    git add .
+    if test (count $argv) -eq 0
+        git add .
+    else
+        git add $argv
+    end
 end
 
 # git commit -m "mensagem"
