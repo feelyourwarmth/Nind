@@ -17,13 +17,6 @@ input {
     }
 }
 
-output "DP-1" {
-    mode "1920x1080@179.999"
-    scale 1.00
-    transform "normal"
-    position x=1280 y=0
-}
-
 layout {
     gaps 10
     center-focused-column "never"
