@@ -35,6 +35,21 @@ alias ll="eza -lah --icons=auto"
 
 alias python="python3"
 
+# git add .
+function gt
+    git add .
+end
+
+# git commit -m "mensagem"
+function gtc
+    git commit -m "$argv"
+end
+
+# git push -u origin main
+function gtp
+    git push -u origin main
+end
+
 
 # ==========================
 # Zoxide

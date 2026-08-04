@@ -117,6 +117,8 @@ sudo pacman -S --needed --noconfirm \
     7zip \
     nautilus \
     nano \
+    qt6ct \
+    nwg-look \
     starship \
     fastfetch \
     sddm \
