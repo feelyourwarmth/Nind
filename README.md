@@ -20,7 +20,7 @@ Besides the dotfiles, the project includes an installer (`install.sh`) capable o
 <small><sub><b>Note:</b><br>
 <i>The installation script was developed and tested by me on clean Arch Linux installations (Minimal DE).</i><br>
 <i>It has also been reviewed to minimize possible issues during the installation of the dotfiles.</i><br>
-<i>Still, if you prefer, you can skip the script and install or copy the dotfiles manually on your system.</i></sub></small>
+<i>Still, if you prefer, you can skip the script and install or copy the dotfiles manually into your system.</i></sub></small>
 
 ## Features
 
