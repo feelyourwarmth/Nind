@@ -1,46 +1,71 @@
 palette = "noctalia"
+add_newline = true
+
+
 format = """
-[](fg:blue)\
-$username\
-[](fg:blue bg:cyan)\
-$directory\
-[](fg:cyan bg:purple)\
-$git_branch\
-$git_status\
-[](fg:purple)\
-$cmd_duration\
-$line_break\
+[](bold white)  $directory$git_branch$git_status$fill
 $character
 """
 
-[username]
-show_always = true
-style_user = "bg:blue fg:black bold"
-format = "[ $user ]($style)"
+
+# ==========================
+# Directory
+# ==========================
 
 [directory]
-style = "bg:cyan fg:black bold"
-format = "[ $path ]($style)"
-truncation_length = 3
-truncate_to_repo = true
+style = "bold cyan"
+format = "[󰋜 $path]($style) "
+home_symbol = "~"
+truncation_length = 4
+truncate_to_repo = false
+
+
+# ==========================
+# Git branch
+# ==========================
 
 [git_branch]
-symbol = "󰘬 "
-style = "bg:purple fg:black bold"
-format = "[ $symbol$branch ]($style)"
+symbol = " "
+style = "magenta"
+format = "[$symbol$branch]($style)"
+
+
+# ==========================
+# Git status
+# ==========================
 
 [git_status]
-style = "bg:purple fg:black"
-format = "[$all_status$ahead_behind]($style)"
+style = "yellow"
+format = " [$all_status$ahead_behind]($style)"
 
-[cmd_duration]
-min_time = 1000
-style = "fg:white"
-format = " [󱫌 $duration]($style)"
+conflicted = "⚔ "
+ahead = "⇡${count} "
+behind = "⇣${count} "
+diverged = "⇕⇡${ahead_count}⇣${behind_count} "
+untracked = "?${count} "
+stashed = "≡ "
+modified = "!${count} "
+staged = "+${count} "
+renamed = "»${count} "
+deleted = "✘${count}"
+
+
+# ==========================
+# Dots separator
+# ==========================
+
+[fill]
+symbol = "·"
+style = "bright-black"
+
+
+# ==========================
+# Prompt
+# ==========================
 
 [character]
-success_symbol = "[❯](bold fg:blue)"
-error_symbol = "[❯](bold fg:red)"
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
 
 # >>> NOCTALIA STARSHIP PALETTE >>>
 # Noctalia Starship Palette
@@ -48,40 +73,40 @@ error_symbol = "[❯](bold fg:red)"
 
 [palettes.noctalia]
 # Standard colors
-blue      = "#98b280"
+blue      = "#7ab8a5"
 red       = "#fd4663"
-green     = "#c1a78b"
-yellow    = "#b1b280"
-cyan      = "#cfd0af"
-magenta   = "#d3c0ac"
-white     = "#f3f2f2"
-black     = "#302921"
+green     = "#9bc18b"
+yellow    = "#7ab886"
+cyan      = "#acd3b3"
+magenta   = "#b7d3ac"
+white     = "#f2f3f2"
+black     = "#263021"
 
 # Extended palette (Catppuccin-compatible names)
-rosewater = "#b1b280"
+rosewater = "#7ab886"
 flamingo  = "#fd4663"
-pink      = "#d3c0ac"
-mauve     = "#d3c0ac"
+pink      = "#b7d3ac"
+mauve     = "#b7d3ac"
 maroon    = "#fd4663"
-peach     = "#b1b280"
-teal      = "#cfd0af"
-sky       = "#cfd0af"
-sapphire  = "#98b280"
-lavender  = "#d3c0ac"
+peach     = "#7ab886"
+teal      = "#acd3b3"
+sky       = "#acd3b3"
+sapphire  = "#7ab8a5"
+lavender  = "#b7d3ac"
 
 # Text shades
-text      = "#f3f2f2"
-subtext1  = "#f3f2f2"
-subtext0  = "#706960"
+text      = "#f2f3f2"
+subtext1  = "#f2f3f2"
+subtext0  = "#646e5e"
 
 # Surface shades
-overlay2  = "#706960"
-overlay1  = "#706960"
-overlay0  = "#302921"
-surface2  = "#302921"
-surface1  = "#302921"
-surface0  = "#231f1a"
-base      = "#231f1a"
-mantle    = "#231f1a"
-crust     = "#231f1a"
+overlay2  = "#646e5e"
+overlay1  = "#646e5e"
+overlay0  = "#263021"
+surface2  = "#263021"
+surface1  = "#263021"
+surface0  = "#1d231a"
+base      = "#1d231a"
+mantle    = "#1d231a"
+crust     = "#1d231a"
 # <<< NOCTALIA STARSHIP PALETTE <<<
