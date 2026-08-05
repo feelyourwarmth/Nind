@@ -1,6 +1,4 @@
 [sie][Gate#0]
-attack=0
-bypass=true
-curveZone=-12
-reduction=-12
-release=75
+curveZone=-22
+reduction=-13
+release=250

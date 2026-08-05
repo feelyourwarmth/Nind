@@ -11,7 +11,6 @@ order = [ "default" ]
     center = [ "clock", "spacer_3", "weather" ]
     contact_shadow = true
     end = [ "media", "tray", "notifications", "volume", "session" ]
-    layer = "overlay"
     margin_edge = 5
     margin_ends = 10
     margin_opposite_edge = 1
@@ -169,19 +168,19 @@ wallpaper_scheme = "soft"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
-    community_ids = [ "zed", "vicinae", "yazi" ]
+    community_ids = [ "spicetify", "zed", "vicinae", "yazi" ]
 
 [wallpaper]
 directory = "~/.config/wallpapers"
 
     [wallpaper.default]
-    path = "/home/feel/.config/wallpapers/wallhaven-mlg59k.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-d83g9m.jpg"
 
     [wallpaper.last]
-    path = "/home/feel/.config/wallpapers/wallhaven-mlg59k.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-d83g9m.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/feel/.config/wallpapers/wallhaven-mlg59k.jpg"
+    path = "/home/feel/.config/wallpapers/wallhaven-d83g9m.jpg"
 
 [widget.audio_visualizer]
 bands = 80
@@ -219,7 +218,7 @@ show_condition = false
 
 [widget.workspaces]
 active_pill_size = 1.55
-hide_when_empty = true
+anchor = true
 inactive_pill_size = 0.80000000000000004
 pill_scale = 0.70000000000000007
 show_labels = false
