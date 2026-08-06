@@ -145,6 +145,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Alt+C hotkey-overlay-title="Clip OBS" { spawn-sh "gobs-cli replaybuffer save"; }
+    Alt+X hotkey-overlay-title="Start/Stop Recording OBS" { spawn-sh "gobs-cli record toggle"; }
 
     Alt+Backslash { screenshot; }
     Ctrl+Backslash { screenshot-screen; }

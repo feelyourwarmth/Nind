@@ -411,12 +411,13 @@ APPS=(
     "LACT" # 5
     "Steam" # 6
     "Discord" # 7
-    "LibreOffice" # 8
-    "Thunderbird" # 9
-    "CoolerControl" # 10
-    "Flatpak" # 11
-    "OpenRGB" # 12
-    "OBS-Studio" # 13
+    "Discord Canary" # 8
+    "LibreOffice" # 9
+    "Thunderbird" # 10
+    "CoolerControl" # 11
+    "Flatpak" # 12
+    "OpenRGB" # 13
+    "OBS-Studio" # 14
 )
 
 for i in "${!APPS[@]}"; do
@@ -497,15 +498,20 @@ else
             ;;
         8)
             INSTALL_PACMAN+=(
-                libreoffice-fresh
+                discord
             )
             ;;
         9)
             INSTALL_PACMAN+=(
-                thunderbird
+                libreoffice-fresh
             )
             ;;
         10)
+            INSTALL_PACMAN+=(
+                thunderbird
+            )
+            ;;
+        11)
             INSTALL_YAY+=(
                 coolercontrold-bin
                 coolercontrol-bin
@@ -522,12 +528,12 @@ else
                 INSTALL_NCT6687=true
             fi
             ;;
-        11)
+        12)
             INSTALL_PACMAN+=(
                 flatpak
             )
             ;;
-        12)
+        13)
             INSTALL_PACMAN+=(
                 openrgb
                 i2c-tools
@@ -537,7 +543,7 @@ else
             sudo modprobe i2c-piix4
             sudo i2cdetect -l
             ;;
-        13)
+        14)
             INSTALL_PACMAN+=(
                 obs-studio
             )
