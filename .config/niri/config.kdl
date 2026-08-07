@@ -18,6 +18,18 @@ input {
     }
 }
 
+// CONFIGURAÇÕES PARA O MONITOR.
+// MEXA AQUI PARA CONFIGURAR O MONITOR, RESOLUÇÃO, POSIÇÃO, ETC.
+// APÓS ALTERAR, REMOVA AS BARRAS DE COMENTÁRIO PARA ATIVAR A CONFIGURAÇÃO.
+// A CONFIGURAÇÃO ABAIXO É UM EXEMPLO DE CONFIGURAÇÃO PARA UM MONITOR DP-1 COM RESOLUÇÃO 1920x1080 A 180hz.
+
+//output "DP-1" {
+//     mode "1920x1080@179.999"
+//    scale 1.00
+//    transform "normal"
+//    position x=1280 y=0
+//}
+
 layout {
     gaps 10
     center-focused-column "never"
@@ -142,6 +154,10 @@ window-rule {
 }
 
 binds {
+    Mod+Alt+Space allow-when-locked=true hotkey-overlay-title="Play/Pause Music" { spawn "playerctl" "play-pause"; }
+    Mod+Alt+Right allow-when-locked=true hotkey-overlay-title="Next Music" { spawn "playerctl" "next"; }
+    Mod+Alt+Left allow-when-locked=true hotkey-overlay-title="Previous Music" { spawn "playerctl" "previous"; }
+
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Alt+C hotkey-overlay-title="Clip OBS" { spawn-sh "gobs-cli replaybuffer save"; }
@@ -155,7 +171,6 @@ binds {
     Mod+E hotkey-overlay-title="Open Nautilus" { spawn "nautilus"; }
     Mod+Shift+E hotkey-overlay-title="Open Nautilus" { spawn-sh "kitty yazi"; }
     Mod+B hotkey-overlay-title="Open Zen" { spawn "zen-browser"; }
-    // Mod+Space hotkey-overlay-title="Toggle Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+Space hotkey-overlay-title="Toggle Launcher" { spawn-sh "vicinae toggle"; }
     Mod+S hotkey-overlay-title="Toggle Panel" { spawn-sh "noctalia msg panel-toggle control-center"; }
     Mod+Alt+L hotkey-overlay-title="Toggle Panel" { spawn-sh "noctalia msg panel-toggle session"; }

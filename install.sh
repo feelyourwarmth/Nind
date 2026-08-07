@@ -126,6 +126,8 @@ sudo pacman -S --needed --noconfirm \
     pipewire \
     pipewire-pulse \
     wireplumber \
+    playerctl \
+    brightnessctl \
     linux-headers \
     ttf-jetbrains-mono \
     ttf-jetbrains-mono-nerd \
