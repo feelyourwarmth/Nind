@@ -1,4 +1,9 @@
-# Nind — Niri + Noctalia Dots
+<h1 align="center">
+  Nind Dots
+</h1>
+<p align="center">Opinionated and Highly Configurable Niri + Noctalia Dot Files</p>
+
+---
 
 <small><sub>_Image for illustration purposes only. The look of the setup may change with future updates._</sub></small>
 <p align="center">
@@ -15,12 +20,9 @@
 
 **Nind** is my personal setup for **Arch Linux** using **Wayland**, the tiling compositor **niri**, and the **Noctalia v5** shell.
 
-Besides the dotfiles, the project includes an installer (`install.sh`) capable of turning a minimal Arch installation into a fully functional desktop, installing packages, drivers, services, and copying all configuration files automatically.
+Besides the dotfiles, the project includes an installer (`install.sh`) capable of turning a minimal Arch installation into a fully functional desktop, installing packages, drivers, and services, and copying all configuration files automatically.
 
-<small><sub><b>Note:</b><br>
-<i>The installation script was developed and tested by me on clean Arch Linux installations (Minimal DE).</i><br>
-<i>It has also been reviewed to minimize possible issues during the installation of the dotfiles.</i><br>
-<i>Still, if you prefer, you can skip the script and install or copy the dotfiles manually into your system.</i></sub></small>
+> **Note:** The installation script was developed and tested on clean Arch Linux installations (Minimal DE), and it has been reviewed to minimize possible issues during setup. Still, if you prefer, you can skip the script and install or copy the dotfiles manually.
 
 ## Features
 
@@ -43,7 +45,7 @@ Besides the dotfiles, the project includes an installer (`install.sh`) capable o
 
 ## What the installer does
 
-`install.sh` runs in 11 steps:
+`install.sh` runs in 12 steps:
 
 1. Enables the `multilib` repository (needed for 32-bit libs, e.g. Steam).
 2. Updates the system (`pacman -Syu`).
@@ -81,7 +83,7 @@ chmod +x install.sh
 ./install.sh
 ```
 
-Do not run it with `sudo`. The script requests admin permissions on its own whenever needed.
+Do not run it with `sudo` — the script requests admin permissions on its own whenever needed.
 
 Once it's done, the system reboots automatically and you'll be able to log into the niri session.
 
