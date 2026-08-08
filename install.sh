@@ -450,6 +450,10 @@ else
             INSTALL_PACMAN+=(
                 easyeffects
                 lsp-plugins
+                lsp-plugins-lv2
+                zam-plugins
+                calf
+                mda.lv2
             )
             INSTALL_YAY+=(
                 deepfilternet-plus-bin
